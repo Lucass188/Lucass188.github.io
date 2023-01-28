@@ -1,0 +1,51 @@
+.footer {
+  background: #000;
+  color: #fff;
+}
+.contato-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px 60px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+.contato-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+.contato-lista li {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.contato-lista a {
+  color: #fff;
+}
+.rodape {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+}
+@media(max-width:800px){
+  .contato-lista li{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .contato-container{
+    gap: 70px;
+  }
+}
+@media(max-width:600px){
+  .contato-container{
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .contato-lista li{
+    font-size: 1.5rem;
+  }
+}
